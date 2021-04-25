@@ -9,15 +9,12 @@ import referenceImg2 from "./stylesheet/ipad.png"
 import author2 from "./stylesheet/user2.png"
 import referenceImg3 from "./stylesheet/iphone.png"
 import author3 from "./stylesheet/user3.png"
-import { Social } from "./UI/Social/Social";
-import { FaHeart } from "react-icons/fa"
-import style from "./App.module.css"
 import { Form } from "./sections/Form/Form";
+import { Footer } from "./components/Footer/Footer";
 
 function App() {
   return (
     <div className="App">
-
       <Header/>
       <Hero />
       <Comment/>
@@ -59,20 +56,7 @@ function App() {
         author= "MARCO CORTEZ / NETNET"
       />
       <Form/>
-      <footer className={style.footer}>
-        <div
-          className={style.logo}
-        >
-          LOGO
-        </div>
-        <p className={`body1 ${style.footerText}`}>
-          <span>
-            Hecho con <FaHeart style={{marginBottom:-2}}/> de Elisa.
-          </span>
-          Copyright 2021 - Todos los derechos reservados.
-        </p>
-        <Social/>
-      </footer>
+      <Footer/>
     </div>
   );
 }
